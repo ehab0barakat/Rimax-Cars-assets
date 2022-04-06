@@ -2046,7 +2046,7 @@ ul {
   }
   .upTop {
     position: fixed;
-    bottom: 10px;
+    bottom: 60px;
     right: -50px;
     background-color: #f5132d;
     color: #fff;
@@ -2106,7 +2106,7 @@ ul {
 }
 .upTop {
   position: fixed;
-  bottom: 45px;
+  bottom: 60px :
   right: -70px;
   background-color: #000;
   color: #fff;
