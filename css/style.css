@@ -2428,22 +2428,27 @@ cursor: pointer;
     font-size: 10px !important;
   }
     
+.lang-over{
+  left: 200px !important;
+}
 
-
-  /* .bb {
-   font-size: 0px !important;
-  } */
+/* .bb {
+  font-size: 0px !important;
+} */
 }
 
 @media (max-width:380px) { 
-
-
+  
+  
 .to-right i,
-  .fs i ,
-  .fs a {
-    /* width: 10px; */
-    font-size: 12px;
-  }
+.fs i ,
+.fs a {
+  /* width: 10px; */
+  font-size: 12px;
+}
+.lang-over{
+  left: 150px !important;
+}
 
   .ll{
     font-size: 6px !important ;
