@@ -2305,6 +2305,7 @@ ul {
   font-size: 23px;
   display: none;
 }
+
 .to-right{
   display: flex;
   align-items: center;
@@ -2686,7 +2687,7 @@ padding-right: 30px;
 
 
 
-@media (max-width:766px) {
+@media (max-width:767px) {
 
  
   .to-right img{
@@ -2707,7 +2708,9 @@ padding-right: 30px;
   display: none !important;    
   }
   
-
+  .stat{
+    display: block;
+  }
 
   .coco{
     top: -38px;
@@ -2781,9 +2784,8 @@ padding-right: 30px;
   height: max-content;
   position: fixed;
   z-index: 999999999999999999;
-  top: 100px ;
-  left: 25%;
-  transform: translateX(50%);
+  top: 58px;
+  left: 260px;
   padding: 10px;
   padding-bottom: 0;
   background: rgb(243, 241, 241);
