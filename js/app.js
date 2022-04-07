@@ -264,11 +264,17 @@ window.addEventListener("resize", function() {
 var kama = $('.kama')
 var lista = $('.lista')
 var forLista = $('.okk')
+var forKama = $(".ok")
 
+kama.on("click" , ()=>{ 
+  forLista.addClass("change");
+  forKama.removeClass("change");
+})
 
-kama.on("click" , ()=>{ forLista.css("display" , "block") })
-lista.on("click" , ()=>{ forLista.css("display" , "none")})
-
+lista.on("click" , ()=>{ 
+  forKama.addClass("change");
+  forLista.removeClass("change");
+})
 
 
 
