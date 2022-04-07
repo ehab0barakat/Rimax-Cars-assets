@@ -80,11 +80,6 @@ thumbnails[i].addEventListener('mouseout', function() {
 //  if ( (scroll + contact + 447 + 25 ) < ( bod - foot )) { $(".clsOne").css({"top": `300px` , "bottom":"unset"} ) } 
 
 // })
-document.onload = resize()
-function resize(){
-    $(".stand").css("width" ,`${$(".ww").css("width")}`)
-}
-setInterval(resize ,  1 )
 
 
 
@@ -176,3 +171,117 @@ $tabsToDropdown.each(function () {
   $dropdownLinks.on("click", clickHandler);
   $pills.on("shown.bs.tab", shownTabsHandler);
 });
+
+var exitButton = $(".exit")
+var exit = $(".clsOne")
+
+
+exitButton.on("click" , ()=> exit.remove() )
+
+
+var first =   $('.a7aaaaa')
+var second =   $('.over')
+
+
+window.onload = function(){
+  
+  var width = document.body.clientWidth ;
+  var margin = (width - 1725 ) / 2  ;
+
+  $(".stand").css("width" ,`${$(".ww").css("width")}`) ;
+  
+  
+  if ( width > 1725 ){
+    first .css("margin-right",`${margin}px`)
+    second .css("margin-right",`${margin}px `)
+  } ;
+
+  if (  width < 1725 ){
+    first .css("margin-right",`unset`)
+    second .css("margin-right",`unset `)
+  };
+  
+  
+  if ( width < 767 ){
+    $(".stat").css("display","block") ;
+  };
+  
+  if ( width > 767 ){
+    
+    $(".stat").css("display" ,"none") ;
+  };
+
+  
+  
+}
+
+
+
+
+
+
+
+
+
+window.addEventListener("resize", function() {
+  var width = document.body.clientWidth ;
+  var margin = (width - 1725 ) / 2  ;
+  
+  $(".stand").css("width" ,`${$(".ww").css("width")}`) ;
+  
+  
+  if ( width > 1725 ){
+    first .css("margin-right",`${margin}px`)
+    second .css("margin-right",`${margin}px `)
+  } 
+
+  if (  width < 1725 ){
+    first .css("margin-right",`unset`)
+    second .css("margin-right",`unset `)
+  }
+
+
+  
+  if ( width < 767 ){
+    
+    $(".stat").css("display" ,"block") ;
+  }
+  
+  if ( width > 767 ){
+    
+    $(".stat").css("display" ,"none") ;
+  }
+
+
+
+
+
+})
+
+
+
+
+
+
+var kama = $('.kama')
+var lista = $('.lista')
+var forLista = $('.okk')
+
+
+kama.on("click" , ()=>{ forLista.css("display" , "block") })
+lista.on("click" , ()=>{ forLista.css("display" , "none")})
+
+
+
+
+var toggleMobileMenu = $('.stat')
+var Menu = $('.menu')
+
+
+
+
+
+
+toggleMobileMenu.on("click", ()=> Menu.toggleClass("show"))
+
+
