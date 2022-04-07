@@ -285,3 +285,7 @@ var Menu = $('.menu')
 toggleMobileMenu.on("click", ()=> Menu.toggleClass("show"))
 
 
+$(".lang").on("click", ()=> $(".dark").toggleClass("showLang"))
+$(".lang-over li").on("click", ()=> $(".dark").toggleClass("showLang"))
+
+
