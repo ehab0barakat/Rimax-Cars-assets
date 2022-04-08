@@ -1,19 +1,6 @@
 $(function(){
     'use strict';
-document.onkeydown = function(e) {
-if(event.keyCode == 123) {
-return false;
-}
-if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)){
-return false;
-}
-if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)){
-return false;
-}
-if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)){
-return false;
-}
-}
+
 
   $('.fixed-menuAgain .fa-chevron-righttt').on('click',function(){
     $(this).parent('.fixed-menuAgain').toggleClass('is-visible');
@@ -287,22 +274,24 @@ kama.on("click" , ()=>{
 lista.on("click" , ()=>{ 
   forKama.addClass("change");
   forLista.removeClass("change");
-})
+});
+
 
 
 
 var toggleMobileMenu = $('.stat')
 var Menu = $('.menu')
-
-
-
-
+var xButton = $('.menu .exitt i')
 
 
 toggleMobileMenu.on("click", ()=> Menu.toggleClass("show"))
+xButton.on("click", ()=> Menu.toggleClass("show"))
 
 
-$(".lang").on("click", ()=> $(".dark").toggleClass("showLang"))
-$(".lang-over li").on("click", ()=> $(".dark").toggleClass("showLang"))
 
+
+
+$(".lang").on("click", ()=> $(".dark").addClass("showLang"))
+$(".lang-over li").on("click", ()=> $(".dark").removeClass("showLang"))
+$(".dark").on("click", ()=> $(".dark").removeClass("showLang"))
 
