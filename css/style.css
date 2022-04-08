@@ -2232,7 +2232,7 @@ ul {
   max-width: 100% ;
   top: 0px;
   display: flex;
-  width: 75% ;
+  width:100% ;
 
   
 }
@@ -2826,6 +2826,47 @@ padding-right: 30px;
 width: 100%;
 }
 
+
+
+.menu .exitt{
+  
+  position: absolute;
+  top: 7px;
+  left: 7px;
+  z-index: 1;
+}
+
+.menu .exitt i{
+  font-size: 27px;
+  color: black;
+  border-radius: 100%;
+  cursor: pointer;
+height: min-content;
+
+}
+
+
+
+
+.dark .exittt{
+  position: absolute;
+  top: 0;
+  right: -30px;
+  z-index: 1;
+  background: inherit;
+  padding: 4px;
+  padding-bottom: 0px;
+  border-radius: 5px;
+}
+
+.dark .exittt i{
+  font-size: 27px;
+  color: black;
+  border-radius: 100%;
+  cursor: pointer;
+height: min-content;
+
+}
 
 
 
