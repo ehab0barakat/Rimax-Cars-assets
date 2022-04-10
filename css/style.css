@@ -2894,3 +2894,61 @@ height: min-content;
   padding-top: 10px ;
   padding-bottom: 10px ;
 }
+
+
+
+
+.shit{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: -80px;
+  left: 0;
+  background: white;
+  padding: 5px;
+  height: 32px;
+  height: 60px ;
+  transition: .2s;
+  border-radius: 4px;
+  transition: .5s;
+  z-index: -1;
+
+}
+
+
+.shit input{
+  background: #eee;
+  border: 1px solid black;
+  border-radius: 4px;
+  height: 80%;
+  width: 70% !important;
+}
+
+.in{
+  bottom: 64px;
+  transition: .5s;
+}
+
+
+
+
+
+
+ .exitttt{
+  
+  position: absolute;
+  top: 7px;
+  left: 15px;
+  z-index: 1;
+}
+
+ .exitttt i{
+  font-size: 27px;
+  color: black;
+  border-radius: 100%;
+  cursor: pointer;
+height: min-content;
+
+}

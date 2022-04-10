@@ -1,20 +1,3 @@
-    'use strict';
-
-
-
-
-
-
-    let span = document.querySelector(".upTop");
-    window.onscroll = function (){
-      this.scrollY >= 500 ? span.classList.add("showUp") : span.classList.remove("showUp")
-  };
-  span.onclick = function (){
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  }
 
 function showDropdownHandler(e) {
   // works also
@@ -172,4 +155,11 @@ $(".dark").on("click", ()=> $(".dark").removeClass("showLang"))
 
 
 
-$(".fu-search").on("click", ()=> $(".search").focus()) 
+$(".fu-search").on("click", ()=> {
+    $(".shit").addClass("in");
+    $(".shit input").focus();
+    
+}) 
+
+$(".exitttt").on("click", ()=> $(".shit").removeClass("in")) 
+
