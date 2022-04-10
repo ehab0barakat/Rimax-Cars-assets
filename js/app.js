@@ -172,16 +172,3 @@ $tabsToDropdown.each(function () {
   $pills.on("shown.bs.tab", shownTabsHandler);
 });
 
-
-let span = document.querySelector(".upTop");
-window.onscroll = function (){
-  this.scrollY >= 500 ? span.classList.add("showUp") : span.classList.remove("showUp")
-};
-span.onclick = function (){
-window.scrollTo({
-  top: 0,
-  behavior: "smooth",
-});
-}
-
-

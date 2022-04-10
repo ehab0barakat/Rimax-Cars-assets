@@ -1516,7 +1516,7 @@ ul {
     display: none;
   }
   .bforeeRess {
-    display: block;
+    display: none;
   }
   .horizontalXX li {
     margin: 0px !important;
@@ -2052,6 +2052,7 @@ ul {
     bottom: 20px;
     right: -50px;
     background-color: #f5132d;
+    z-index: 101;
     color: #fff;
     font-weight: 500;
     font-size: 12px;
@@ -2079,7 +2080,7 @@ ul {
 .clsOne {
   position: fixed;
   width: 60px;
-  position: 101;
+  z-index: 101;
   top: 50%;
   transform: translateY(-50%);
   left: 0px;
@@ -2135,6 +2136,7 @@ ul {
   right: -70px;
   background-color: #000;
   color: #fff;
+  z-index: 101;
   font-weight: 500;
   font-size: 12px;
   padding: 10px 20px;
@@ -2145,6 +2147,7 @@ ul {
 }
 .upTop.showUp {
   right: 9.7%;
+  z-index: 101;
 }
 .newSecCC .card-body {
   transition: 0.3s ease-in-out;
@@ -2429,8 +2432,24 @@ cursor: pointer;
   }
   
 }
+
+.mobile{
+  display: none;
+}
+
+
 @media (max-width:476px) {
     
+  .mobile{
+    display: block;
+  }
+
+ .comp{
+    display: none;
+  }
+
+
+
   .vertical{
     flex-direction: column;
   }
@@ -2440,7 +2459,7 @@ cursor: pointer;
 
   .ll{
     width: fit-content;
-    font-size: 10px !important;
+    font-size: 8px !important;
   }
     
 .lang-over{
@@ -2976,4 +2995,32 @@ right: -117px;
   background: transparent;
   border-color: transparent;
   box-shadow: 0 0 0 0 transparent ;
+}
+
+
+
+
+.gridd{
+  display: grid;
+  grid-template-columns: 5;
+}
+
+
+
+
+table,
+th,
+td,
+tr{
+  border: 1px solid black;
+  align-items: center;
+  text-align: center;
+}
+
+
+
+
+
+th{
+background: #dfdada;
 }
