@@ -3024,3 +3024,11 @@ tr{
 th{
 background: #dfdada;
 }
+
+
+
+
+.mobile td{
+padding-top : 15px;
+padding-bottom : 15px;
+}
