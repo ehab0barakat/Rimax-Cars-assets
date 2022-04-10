@@ -1188,11 +1188,11 @@ ul {
 .slider-link-App {
   display: none;
 }
-.horizontalXX {
+/* .horizontalXX {
   margin-right: -40px;
-}
+} */
 .horizontalXX .spe {
-  margin: 0px 80px;
+  /* margin: 0px 80px; */
   background-color: transparent;
 }
 .bforeeRess {
@@ -2241,6 +2241,12 @@ ul {
 
 
 @media (max-width:1024px) {
+
+  .coco{
+    flex: 0 0 100% !important; 
+    max-width: 100% !important;
+  }
+
   .stand{
     width: 100%;
     /* padding-left: 20px; */
@@ -2423,6 +2429,13 @@ cursor: pointer;
 }
 @media (max-width:476px) {
     
+  .vertical{
+    flex-direction: column;
+  }
+
+
+
+
   .ll{
     width: fit-content;
     font-size: 10px !important;
