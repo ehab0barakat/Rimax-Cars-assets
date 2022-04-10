@@ -23,7 +23,7 @@ var first =   $('.a7aaaaa')
 var second =   $('.over')
 
 
-window.onload = function(){
+$("document").ready( function(){
   
   var width = document.body.clientWidth ;
   var margin = (width - 1725 ) / 2  ;
@@ -53,7 +53,7 @@ window.onload = function(){
     $(".lang-over").css("left",`260px`)
   };
 
-}
+})
 
 
 
