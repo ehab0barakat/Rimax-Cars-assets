@@ -1228,6 +1228,7 @@ ul {
     bottom: -1px !important;
     left: 0px !important;
     display: block;
+    z-index: 101;
     background-color: #fff;
     height: 8vh;
   }
@@ -2078,6 +2079,7 @@ ul {
 .clsOne {
   position: fixed;
   width: 60px;
+  position: 101;
   top: 50%;
   transform: translateY(-50%);
   left: 0px;
@@ -2480,7 +2482,7 @@ cursor: pointer;
 .a7aaaaa{
   position: fixed;
   top: 94px;
-  z-index: 999999;
+  z-index: 99;
   padding-left: 35px !important;
 
 
@@ -2962,6 +2964,10 @@ height: min-content;
 right: -117px;
 }
 
+
+.coco{
+  z-index: 100; 
+}
 
 .btn-secondary:not(:disabled):not(.disabled):active:focus,
 .btn-secondary:not(:disabled):not(.disabled):active,
