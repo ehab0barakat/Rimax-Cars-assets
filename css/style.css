@@ -2927,7 +2927,7 @@ height: min-content;
 }
 
 .in{
-  bottom: 64px;
+  bottom: 50px;
   transition: .5s;
 }
 
@@ -2951,4 +2951,23 @@ height: min-content;
   cursor: pointer;
 height: min-content;
 
+}
+
+.trans{
+  background: transparent;
+}
+
+
+.lala-land{
+right: -117px;
+}
+
+
+.btn-secondary:not(:disabled):not(.disabled):active:focus,
+.btn-secondary:not(:disabled):not(.disabled):active,
+.fs .btn-secondary:focus ,
+.fs .btn-secondary:hover {
+  background: transparent;
+  border-color: transparent;
+  box-shadow: 0 0 0 0 transparent ;
 }

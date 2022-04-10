@@ -157,8 +157,7 @@ $(".dark").on("click", ()=> $(".dark").removeClass("showLang"))
 
 $(".fu-search").on("click", ()=> {
     $(".shit").addClass("in");
-    $(".shit input").focus();
-    
+    $(".shit input").focus(); 
 }) 
 
 $(".exitttt").on("click", ()=> $(".shit").removeClass("in")) 
