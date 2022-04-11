@@ -3017,13 +3017,18 @@ tr {
   text-align: center;
 }
 
+.comp ,
+.mobile{
+  margin-top: 15px;
+}
+
 
 .tableu{
   background: white;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 15px;
+  padding: 25px;
   border-radius: 15px;
 }
 
@@ -3048,7 +3053,3 @@ padding-top : 15px;
 padding-bottom : 15px;
 }
 
-
-.less{
-  max-width: 80px ;
-}
