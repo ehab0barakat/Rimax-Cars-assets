@@ -24,7 +24,7 @@ var second =   $('.over')
 
 
 
-window.addEventListener(["resize" , "load" ], function() {
+$(window).on( "resize load" , function() {
   var width = document.body.clientWidth ;
   var margin = (width - 1725 ) / 2  ;
   var margX2 = width - 1400   ;
