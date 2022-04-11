@@ -55,7 +55,7 @@ $("document").ready( function(){
 
 })
 
-$("document").onload = function(){
+$("document").onbeforeunload = function(){
   
   var width = document.body.clientWidth ;
   var margin = (width - 1725 ) / 2  ;
