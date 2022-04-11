@@ -23,8 +23,39 @@ var first =   $('.a7aaaaa')
 var second =   $('.over')
 
 
+$("document").ready( function(){
+  
+  var width = document.body.clientWidth ;
+  var margin = (width - 1725 ) / 2  ;
+  var margX2 = width - 1400   ;
+  
+  $(".stand").css("width" ,`${$(".ww").css("width")}`) ;
+  
+  
+  if ( width > 1725 ){
+    first .css("margin-right",`${margin}px`)
+    second .css("margin-right",`${margin}px `)
+    $(".lang-over").css("left",`${260 + 325 + margin }px`)
+  } ;
 
-window.onload = function(){
+  if (  width < 1725 ){
+    first .css("margin-right",`unset`)
+    second .css("margin-right",`unset `)
+  };
+
+
+  if (  width > 1400 && width < 1725  ){
+    $(".lang-over").css("left",`${260 + margX2}px`)
+  };
+
+
+  if (  width < 1400 ){
+    $(".lang-over").css("left",`260px`)
+  };
+
+})
+
+$("document").onready = function(){
   
   var width = document.body.clientWidth ;
   var margin = (width - 1725 ) / 2  ;
@@ -58,7 +89,7 @@ window.onload = function(){
 
 
 
-window.addEventListener("resize", function() {
+window.addEventListener(["resize" , "load" ], function() {
   var width = document.body.clientWidth ;
   var margin = (width - 1725 ) / 2  ;
   var margX2 = width - 1400   ;
