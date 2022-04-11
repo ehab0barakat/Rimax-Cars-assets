@@ -3011,24 +3011,44 @@ right: -117px;
 table,
 th,
 td,
-tr{
+tr {
   border: 1px solid black;
   align-items: center;
   text-align: center;
 }
 
 
+.tableu{
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  border-radius: 15px;
+}
 
+table {
+width: 100%;
+}
 
 
 th{
 background: #dfdada;
 }
 
-
+.fa-trash-can{
+  font-size: 22px;
+  color: rgb(165, 0, 0);
+  cursor: pointer;
+}
 
 
 .mobile td{
 padding-top : 15px;
 padding-bottom : 15px;
+}
+
+
+.less{
+  max-width: 80px ;
 }
