@@ -24,7 +24,7 @@ var second =   $('.over')
 
 
 
-$("document").onload = function(){
+window.onload = function(){
   
   var width = document.body.clientWidth ;
   var margin = (width - 1725 ) / 2  ;
